@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+export const dynamic = "force-dynamic";
 
 const EventDetailItem = ({
   icon,
