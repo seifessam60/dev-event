@@ -49,8 +49,8 @@ const EventDetailsPage = async ({
 }: {
   params: Promise<{ slug: string }>;
 }) => {
-  "use cache";
-  cacheLife("hours");
+  // "use cache";
+  // cacheLife("hours");
   const { slug } = await params;
 
   let event;
