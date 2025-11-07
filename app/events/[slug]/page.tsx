@@ -8,7 +8,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 const EventDetailItem = ({
   icon,
@@ -51,8 +51,8 @@ const EventDetailsPage = async ({
 }: {
   params: Promise<{ slug: string }>;
 }) => {
-  "use cache";
-  cacheLife("hours");
+  // "use cache";
+  // cacheLife("hours");
   const { slug } = await params;
 
   let event;
